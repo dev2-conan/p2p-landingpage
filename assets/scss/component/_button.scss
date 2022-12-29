@@ -1,0 +1,54 @@
+.btn{
+	position: relative;
+	display:inline-block;
+	padding: 0.688rem 0.75rem;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;
+	-moz-user-select:none;user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-radius: 8px;
+	transition: .3s;
+
+	&-primary {
+		min-width: 220px;
+		font-weight: 500;
+		color: #18181B;
+		background: var(--primary);
+
+		&:hover, &:focus {
+			color: #000;
+		    background-color: #faac2e;
+		    border-color: #faac2e;
+		 	box-shadow: 0 0 10px #b5b5b5;
+		}
+	}
+
+	&-secondary{
+		background: #E4E4E7;
+	}
+
+
+  @media (max-width: 1399px) {}
+
+  @media (max-width: 1199px) {}
+
+  @media (max-width: 991px) {
+  	border-radius: 4px;
+  	font-size: 14px;
+    line-height: 20px;
+    padding: 5px 10px;
+
+  	&-primary{
+  		min-width: 160px;
+  	}
+  }
+
+  @media (max-width: 767px) {}
+
+  @media (max-width: 575px) {}
+}

@@ -1,0 +1,10 @@
+// Color
+$primary_color: #FAAC2E;
+$secondary_color: #C29B39;
+
+
+:root {
+  --fontfamily: 'Roboto', sans-serif;
+  --font-color: #51525C;; // basefontカラー
+  --primary: #{$primary_color};
+}

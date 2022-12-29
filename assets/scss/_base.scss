@@ -1,0 +1,68 @@
+/*Reset*/
+*,*::before,*::after{box-sizing:border-box;}
+a{text-decoration:none;}
+img{max-width:100%;height:auto;max-height:100%;}
+ul{list-style:none;padding:0;margin:0}
+
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:0.5rem;font-weight:500;line-height:1.2;}
+p{margin-top:0;margin-bottom:0;}
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E6E6E6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color01);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color01);
+}
+/*Body*/
+.position-relative{position:relative!important;}
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+body {
+  font: 16px/24px var(--fontfamily);
+  color: var(--font-color);
+  @include letter-spacing(40);
+}
+
+.minw-160{
+  min-width: 160px!important;
+}
+
+/* Text truncate */
+.text__truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.text__truncate.-n2 {
+  -webkit-line-clamp: 2;
+}
+
+.text__truncate.-n3 {
+  -webkit-line-clamp: 3;
+}
+
+.text__truncate.-n4 {
+  -webkit-line-clamp: 4;
+}
+

@@ -1,0 +1,30 @@
+// ==========================================================================
+// Configuration
+// ==========================================================================
+@import "mixins";
+
+// ==========================================================================
+// Layout & components
+// ==========================================================================
+@import "root";
+@import "reset";
+@import "base";
+@import "utilities";
+
+//==========================================================================
+//Foundation
+//==========================================================================
+@import "component/font";
+@import "component/icon";
+@import "component/general";
+@import "component/animate";
+@import "component/effect";
+@import "component/c-header";
+@import "component/menu";
+@import "component/button";
+/**/
+@import "layout/header";
+@import "layout/footer";
+// Page
+@import "project/home";
+

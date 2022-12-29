@@ -1,0 +1,108 @@
+@-webkit-keyframes flash {
+	0% {
+		opacity: .5
+	}
+
+	100% {
+		opacity: 1
+	}
+
+}
+.ef__flashing:hover {
+	opacity: 1;
+	-webkit-animation: flash 3s;
+	animation: flash 3s
+}
+
+@keyframes flash {
+	0% {
+		opacity: .5
+	}
+
+	100% {
+		opacity: 1
+	}
+
+}
+
+.ef__shine {
+	position: relative;
+	overflow: hidden
+}
+
+.ef__shine::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg)
+}
+
+.ef__shine:hover::before {
+	-webkit-animation: shine 1s;
+	animation: shine 1s
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%
+	}
+
+}
+
+@keyframes shine {
+	100% {
+		left: 125%
+	}
+
+}
+
+.ef--shine {
+	position: relative;
+	overflow: hidden
+}
+
+.ef--shine .ef--shine__thumb {
+	position: relative;
+}
+
+.ef--shine .ef--shine__thumb::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg)
+}
+
+.ef--shine:hover .ef--shine__thumb::before {
+	-webkit-animation: shine 2s;
+	animation: shine 2s
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%
+	}
+
+}
+
+@keyframes shine {
+	100% {
+		left: 125%
+	}
+
+}

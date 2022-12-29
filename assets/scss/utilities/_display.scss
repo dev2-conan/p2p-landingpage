@@ -1,0 +1,69 @@
+/**/
+.d-none{display:none!important;}
+.d-block{display:block!important;}
+.d-flex{display:flex!important;}
+.align-items-center{align-items:center!important;}
+.align-items-end{align-items:flex-end!important;}
+.justify-content-center{justify-content:center!important;}
+.justify-content-end{justify-content:end!important;}
+.flex-wrap{flex-wrap:wrap!important;}
+.flex-column{flex-direction:column!important;}
+.gap-3{gap:1rem!important;}
+
+.text-center{text-align:center!important;}
+.text-start{text-align:left!important;}
+.text-end{text-align:right!important;}
+.fw-500{font-weight:500!important;}
+.fw-bold{font-weight:700!important;}
+.w-100{width:100%!important;}
+.text-white{color:#fff!important;}
+
+/**/
+.ratio.ratio--contain{
+  img{
+    object-fit: contain;
+  }
+}
+// Responsive
+@media (min-width:576px){
+  .text-sm-center{text-align:center!important;}
+  .container{max-width:540px;}
+  .d-sm-none{display:none!important;}
+  .d-sm-block{display:block!important;}
+  .d-sm-flex{display:flex!important;}
+  .order-sm-2{order:2!important;}
+}
+@media (min-width:768px){
+  .d-md-none{display:none!important;}
+  .d-md-block{display:block!important;}
+  .d-md-flex{display:flex!important;}
+  .order-md-2{order:2!important;}
+  .container{max-width:720px;}
+}
+@media (min-width:992px){
+  .d-lg-none{display:none!important;}
+  .d-lg-block{display:block!important;}
+  .d-lg-flex{display:flex!important;}
+  .order-lg-2{order:2!important;}
+  .container{max-width:960px;}
+  .justify-content-lg-start{justify-content:flex-start!important;}
+  .text-lg-start{text-align:left!important;}
+  .flex-lg-nowrap{flex-wrap:nowrap!important;}
+}
+@media (min-width:1200px){
+  .d-xl-none{display:none!important;}
+  .d-xl-block{display:block!important;}
+  .d-xl-flex{display:flex!important;}
+  .container{max-width:1176px;}
+}
+@media (min-width:1400px){
+  .container{max-width:1224px;}
+  .d-xxl-none{display:none!important;}
+  .d-xxl-block{display:block!important;}
+}
+@media (min-width:1600px){
+  .d-xxxl-none{display:none!important;}
+  .d-xxxl-block{display:block!important;}
+  .container-1400{max-width:1400px;}
+  .container-1600{max-width:1624px;}
+}

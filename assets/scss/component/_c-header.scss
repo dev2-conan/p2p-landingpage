@@ -1,0 +1,33 @@
+/*C-header*/
+.c-header {
+	margin-bottom: 40px;
+
+	&__title {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 44px;
+		color: #18181B;
+	}
+
+	&__sub {
+		margin-top: 12px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #51525C;
+	}
+	@media ( max-width: 1399px ) {}
+	@media ( max-width: 1199px ) {}
+	@media ( max-width: 991px ) {}
+	@media ( max-width: 767px ) {}
+	@media ( max-width: 575px ) {
+		&__title{
+			font-size: 24px;
+			line-height: 32px;
+		}
+		&__sub{
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}

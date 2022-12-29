@@ -1,0 +1,119 @@
+[class^="icon-"],
+[class*=" icon-"] {
+    position: relative;
+    display: inline-block;
+
+    &:before {
+        content: '';
+        position: relative;
+        display: inline-block;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: contain;
+        background-color: #fff;
+        transition: color .5s;
+    }
+
+    &.-white {
+        &:before {
+            background-color: #fff;
+        }
+    }
+}
+
+/*Icon*/
+.icon-top:before {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/page_top.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.icon-phone:before {
+    width: 16px;
+    height: 20px;
+    mask-image: url(../images/icon-phone.svg);
+    background-color: var(--key-color);
+
+}
+
+.icon-phonev2:before {
+    width: 22px;
+    height: 28px;
+    mask-image: url(../images/icon-phone.svg);
+    background-color: var(--key-color);
+}
+
+.icon-line:before {
+    width: 36px;
+    height: 36px;
+    mask-image: url(../images/icon-line.svg);
+    background-color: var(--key-color);
+}
+
+.icon-twitter:before {
+    width: 32px;
+    height: 32px;
+    mask-image: url(../images/icon-twitter.svg);
+    background-color: var(--key-color);
+}
+
+.icon-instagram:before {
+    width: 34px;
+    height: 34px;
+    mask-image: url(../images/icon-instagram.svg);
+    background-color: var(--key-color);
+}
+
+.icon-angle-right:before {
+    width: 10px;
+    height: 10px;
+    mask-image: url(../images/icon-arrow.svg);
+    background-color: var(--key-color);
+    transform: rotate(-90deg);
+
+}
+
+.icon-calendar:before {
+    width: 25px;
+    height: 24px;
+    mask-image: url(../images/icon-calendar.png);
+    background-color: #fff;
+}
+
+.icon-clock:before {
+    width: 28px;
+    height: 27px;
+    mask-image: url(../images/icon-clock.png);
+    background-color: #fff;
+}
+
+
+
+[class^="iconbg-"],
+[class*=" iconbg-"] {
+    display: inline-block;
+}
+
+.iconbg-line-circle,
+.iconbg-twitter-circle,
+.iconbg-instagram-circle {
+    width: 55px;
+    height: 55px;
+    background-color: var(--footer-sns-color);
+    background-repeat: no-repeat;
+}
+
+.iconbg-line-circle {
+    mask-image: url(../images/icon-line-circle.svg);
+}
+
+.iconbg-twitter-circle {
+    mask-image: url(../images/icon-twitter-circle.svg);
+}
+
+.iconbg-instagram-circle {
+    mask-image: url(../images/icon-instagram-circle.svg);
+}

@@ -1,5 +1,7 @@
 <template>
-    <component :is="Component" />
+    <div class="home">
+        <component class="wrapper" :is="Component" />
+    </div>
 </template>
 <script setup>
 import MobileDetect from 'mobile-detect';
