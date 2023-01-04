@@ -13,9 +13,11 @@
     "bootstrap-vue": "^2.23.1",
     "mobile-detect": "^1.4.5",
     "swiper": "^8.4.5",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue3-carousel": "^0.2.9"
   },
   "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
     "node-sass": "^8.0.0",
     "nuxt": "3.0.0",
     "sass": "^1.57.1",
