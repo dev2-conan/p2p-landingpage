@@ -1,0 +1,26 @@
+.l-qa{
+	padding: 64px 0;
+
+	.accordion{
+		margin-bottom: 64px;
+		&-button {
+			font-weight: 500;
+		    background-color: #FAFAFA;
+		    &:not(.collapsed) {
+			    color: #18181B;
+			}
+		}
+
+	}
+	@media ( max-width: 1399px ) {}
+	@media ( max-width: 1199px ) {}
+	@media ( max-width: 991px ) {}
+	@media ( max-width: 767px ) {}
+	@media ( max-width: 575px ) {
+		.accordion-button {
+			padding: 12px;
+		    font-size: 14px;
+		    line-height: 20px;
+		}
+	}
+}

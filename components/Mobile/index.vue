@@ -1,13 +1,14 @@
 <template>
     <div>
         <MobileHeader />
+        <CommonBanner />
+        <CommonWhychoose />
+        <CommonPartner />
+        <CommonQa />
+        <CommonText />
+        <MobileFooter />
     </div>
 </template>
 <script>
-export default {
-    
-}
+
 </script>
-<style lang="">
-    
-</style>

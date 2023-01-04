@@ -7,15 +7,18 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-vue": "^2.23.1",
+    "mobile-detect": "^1.4.5",
+    "swiper": "^8.4.5",
+    "vue": "^3.2.45"
+  },
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nuxt": "3.0.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0"
-  },
-  "dependencies": {
-    "bootstrap": "^5.2.3",
-    "bootstrap-vue": "^2.23.1",
-    "mobile-detect": "^1.4.5"
   }
 }

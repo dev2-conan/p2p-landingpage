@@ -1,0 +1,45 @@
+.l-banner{
+	padding: 60px 0;
+	background: #FAFAFA;
+	&__title{
+		margin-bottom: 0;
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 59px;
+		color: #000000;
+	}
+	&__sub{
+		margin-top: 8px;
+	}
+
+	@media ( max-width: 1399px ) {}
+	@media ( max-width: 1199px ) {
+		&__title {
+		    font-size: 36px;
+		    line-height: 48px;
+		}
+	}
+	@media ( max-width: 991px ) {
+		&__title {
+		    font-size: 28px;
+		    line-height: 38px;
+		}
+	}
+	@media ( max-width: 767px ) {}
+	@media ( max-width: 575px ) {
+		padding: 40px 0;
+		margin-bottom: 50px;
+		&__thumb {
+			max-width: 280px;
+		    margin: 0 auto -100px;
+		}
+		&__title {
+		    font-size: 24px;
+		    line-height: 32px;
+		}
+		&__sub {
+		    font-size: 14px;
+		    line-height: 20px;
+		}
+	}
+}
