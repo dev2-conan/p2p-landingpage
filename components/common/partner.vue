@@ -76,7 +76,7 @@ import "swiper/css/navigation";
 
 
 export default {
-  name: 'App',
+  name: 'partner',
   components: {
     Swiper,
     SwiperSlide,
