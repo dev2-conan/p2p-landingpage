@@ -32,94 +32,24 @@
           @swiper="onSwiper"
           @slideChange="onSlideChange"
         >
-          <swiper-slide>
+          <swiper-slide v-for="partner in partnersRs" :key="partner.id">
             <div class="c-item d-flex w-100 flex-column">
               <div class="c-item__thumb">
                 <div class="ratio ratio-1x1 ratio--contain">
                   <img
-                    src="~/assets/images/components/partner/ico-recovery-convert.svg"
-                    alt=""
+                    :src="partner.img"
+                    :alt="partner.title"
                   />
                 </div>
               </div>
               <div class="c-item__meta mb-4">
-                <h3 class="c-item__title">Mua/bán bằng VND</h3>
+                <h3 class="c-item__title">{{ partner.title }}</h3>
                 <div class="c-item__excerpt">
-                  Mua và bán TetherUS một cách an toàn và dễ dàng trên VinEX P2P. Tìm ưu đãi tốt nhất bên dưới, mua và bán USDT bằng các phương thức thanh toán ưa thích của bạn ngay hôm nay.
+                  {{ partner.excerpt }}
                 </div>
               </div>
               <div class="mt-auto">
-                <a href="#" class="btn-readmore btn btn-secondary"
-                  >Giao dịch ngay</a
-                >
-              </div>
-            </div>
-          </swiper-slide>
-      
-          <swiper-slide>
-            <div class="c-item d-flex w-100 flex-column">
-              <div class="c-item__thumb">
-                <div class="ratio ratio-1x1 ratio--contain">
-                  <img
-                    src="~/assets/images/components/partner/ico-percentage-square.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="c-item__meta mb-4">
-                <h3 class="c-item__title">Phí giao dịch thấp nhất</h3>
-                <div class="c-item__excerpt">
-                  VinEX dẫn đầu với phí giao dịch thấp và chương trình VIP hấp dẫn. Hãy tận hưởng mức phí giao dịch thấp nhất thị trường.
-                </div>
-              </div>
-              <div class="mt-auto">
-                <a href="#" class="btn-readmore btn btn-secondary"
-                  >Giao dịch ngay</a
-                >
-              </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="c-item d-flex w-100 flex-column">
-              <div class="c-item__thumb">
-                <div class="ratio ratio-1x1 ratio--contain">
-                  <img
-                    src="~/assets/images/components/partner/ico-shield-security.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="c-item__meta mb-4">
-                <h3 class="c-item__title">Bảo mật cao</h3>
-                <div class="c-item__excerpt">
-                  Các biện pháp bảo mật cao cấp cùng cùng quỹ sàn của VinEX sẽ bảo vệ dữ liệu và tài sản của bạn trước rủi ro.
-                </div>
-              </div>
-              <div class="mt-auto">
-                <a href="#" class="btn-readmore btn btn-secondary"
-                  >Giao dịch ngay</a
-                >
-              </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="c-item d-flex w-100 flex-column">
-              <div class="c-item__thumb">
-                <div class="ratio ratio-1x1 ratio--contain">
-                  <img
-                    src="~/assets/images/components/partner/ico-24-support.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="c-item__meta mb-4">
-                <h3 class="c-item__title">Hỗ trợ khách hàng 24/7</h3>
-                <div class="c-item__excerpt">
-                  Đội ngũ hỗ trợ nhiều kinh nghiệm của VinEX luôn túc trực 24/7 để sẵn sàng trợ giúp bạn.
-                </div>
-              </div>
-              <div class="mt-auto">
-                <a href="#" class="btn-readmore btn btn-secondary"
+                <a :href="partner.link" class="btn-readmore btn btn-secondary"
                   >Giao dịch ngay</a
                 >
               </div>
@@ -132,6 +62,8 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+import { partners } from '~/resources/partner'
 // import Swiper core and required modules
 import { Navigation, A11y } from "swiper";
 
@@ -142,26 +74,23 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// Import Swiper styles
+
 export default {
+  name: 'App',
   components: {
     Swiper,
     SwiperSlide,
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log("slide change");
-    };
-    return {
-      onSwiper,
-      onSlideChange,
-      modules: [Navigation, A11y],
-    };
-  },
-};
+      // make users variable reactive with the ref() function
+      const partnersRs = ref(partners)
+
+      return {
+          partnersRs,
+          modules: [Navigation, A11y],
+      };
+  }
+}
 </script>
 
 <style lang="scss" src="~/assets/scss/project/home/_partner.scss"></style>

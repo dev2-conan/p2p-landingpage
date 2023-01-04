@@ -83,7 +83,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="c-box__thumb">
-                            <img src="~/images/components/qa/qa-img-01.png" alt="">
+                            <img src="@imagesComponents/qa/qa-img-01.png" alt="">
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,7 @@
                 <div class="c-item text-center">
                     <div class="c-item__thumb">
                         <div class="ratio ratio-4x3 ratio--contain">
-                        <img src="~/assets/images/components/whychoose/whychoose-img-01.png" alt="">
+                        <img src="@imagesComponents/whychoose/whychoose-img-01.png" alt="">
                         </div>
                     </div>
                     <div class="c-item__meta">
@@ -26,7 +26,7 @@
                 <div class="c-item text-center">
                     <div class="c-item__thumb">
                         <div class="ratio ratio-4x3 ratio--contain">
-                        <img src="~/assets/images/components/whychoose/whychoose-img-02.png" alt="">
+                        <img src="@imagesComponents/whychoose/whychoose-img-02.png" alt="">
                         </div>
                     </div>
                     <div class="c-item__meta">
@@ -40,7 +40,7 @@
                 <div class="c-item text-center">
                     <div class="c-item__thumb">
                         <div class="ratio ratio-4x3 ratio--contain">
-                        <img src="~/assets/images/components/whychoose/whychoose-img-03.png" alt="">
+                        <img src="@imagesComponents/whychoose/whychoose-img-03.png" alt="">
                         </div>
                     </div>
                     <div class="c-item__meta">

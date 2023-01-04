@@ -10,7 +10,8 @@ export default defineNuxtConfig({
       'bootstrap-vue/dist/bootstrap-vue.css',
     ],
     alias: {
-    'images': resolve(__dirname, './assets/images')
-  }
+      'images': resolve(__dirname, './assets/images'),
+      '@imagesComponents': resolve(__dirname, './assets/images/components')
+    },
     
 })

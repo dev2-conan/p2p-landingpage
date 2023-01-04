@@ -13,7 +13,7 @@
             </div>
             <div class="col-md-6">
                 <div class="l-banner__thumb">
-                    <img src="~/images/components/banner/sc-banner.png" alt="">
+                    <img src="@imagesComponents/banner/sc-banner.png" alt="">
                 </div>
             </div>
             </div>

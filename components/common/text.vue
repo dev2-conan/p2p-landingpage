@@ -9,7 +9,7 @@
     </section>
 
     <div>
-        <img src="~/assets/images/components/text/banner-img-01.jpg" alt="">
+        <img src="@imagesComponents/text/banner-img-01.jpg" alt="">
     </div>
 </template>
 
